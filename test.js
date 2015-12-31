@@ -1,17 +1,13 @@
-'use strict';
-var test = require('ava');
-var stableFn = require('stable-fn');
-var fn = require('./');
-var fixture = ['a', 'b', 'c', 'd', 'e'];
+import test from 'ava';
+import stableFn from 'stable-fn';
+import fn from './';
 
-test(function (t) {
-	t.assert(!stableFn(function () {
-		return fn(fixture);
-	}));
+const fixture = ['a', 'b', 'c', 'd', 'e'];
 
-	for (var i = 0; i < 1000; i++) {
-		t.assert(typeof fn(fixture) === 'string');
+test(t => {
+	t.false(stableFn(() => fn(fixture)));
+
+	for (let i = 0; i < 1000; i++) {
+		t.is(typeof fn(fixture), 'string');
 	}
-
-	t.end();
 });

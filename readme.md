@@ -28,6 +28,7 @@ randomItem(['pony', 'unicorn', 'rainbow']);
 - [random-obj-prop](https://github.com/sindresorhus/random-obj-prop) - Get a random property from an object
 - [unique-random](https://github.com/sindresorhus/unique-random) - Generate random numbers that are consecutively unique
 - [unique-random-array](https://github.com/sindresorhus/unique-random-array) - Get consecutively unique elements from an array
+- [crypto-random-string](https://github.com/sindresorhus/crypto-random-string) - Generate a cryptographically strong random string
 
 
 ## License

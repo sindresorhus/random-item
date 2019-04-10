@@ -1,8 +1,10 @@
 'use strict';
-module.exports = function (arr) {
-	if (!Array.isArray(arr)) {
-		throw new TypeError('Expected an array');
+module.exports = iterable => {
+	if (!Array.isArray(iterable) && typeof iterable[Symbol.iterator] !== 'function') {
+		throw new TypeError('Expected an array or an iterable');
 	}
 
-	return arr[Math.floor(Math.random() * arr.length)];
+	const array = Array.isArray(iterable) ? iterable : [...iterable];
+
+	return array[Math.floor(Math.random() * array.length)];
 };

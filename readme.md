@@ -1,22 +1,25 @@
 # random-item [![Build Status](https://travis-ci.org/sindresorhus/random-item.svg?branch=master)](https://travis-ci.org/sindresorhus/random-item)
 
-> Get a random item from an array
+> Get a random item from an [Iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol)
 
 
 ## Install
 
 ```
-$ npm install --save random-item
+$ npm install random-item
 ```
 
 
 ## Usage
 
 ```js
-var randomItem = require('random-item');
+const randomItem = require('random-item');
 
-randomItem(['pony', 'unicorn', 'rainbow']);
-//=> 'unicorn'
+randomItem(['🐴', '🦄', '🌈']);
+//=> '🦄'
+
+randomItem(new Set(['🐴', '🦄', '🌈']);
+//=> '🌈'
 ```
 
 

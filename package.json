@@ -1,6 +1,6 @@
 {
 	"name": "random-item",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "Get a random item from an Iterable",
 	"license": "MIT",
 	"repository": "sindresorhus/random-item",

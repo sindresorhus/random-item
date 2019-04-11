@@ -1,41 +1,39 @@
 {
-  "name": "random-item",
-  "version": "1.0.0",
-  "description": "Get a random item from an array",
-  "license": "MIT",
-  "repository": "sindresorhus/random-item",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=8"
-  },
-  "scripts": {
-    "test": "xo && ava && tsd"
-  },
-  "files": [
+	"name": "random-item",
+	"version": "1.0.0",
+	"description": "Get a random item from an Iterable",
+	"license": "MIT",
+	"repository": "sindresorhus/random-item",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && ava && tsd"
+	},
+	"files": [
 		"index.js",
 		"index.d.ts"
-  ],
-  "keywords": [
-    "rand",
-    "random",
-    "randomize",
-    "math",
-    "array",
-    "arr",
-    "item",
-    "el",
-    "element",
-    "pick",
-    "select"
-  ],
-  "devDependencies": {
-    "ava": "*",
-    "stable-fn": "^1.0.0",
-    "tsd": "^0.7.2",
-    "xo": "^0.24.0"
-  }
+	],
+	"keywords": [
+		"random",
+		"randomize",
+		"math",
+		"array",
+		"iterable",
+		"item",
+		"element",
+		"pick",
+		"select"
+	],
+	"devDependencies": {
+		"ava": "^1.4.1",
+		"stable-fn": "^2.0.0",
+		"tsd": "^0.7.2",
+		"xo": "^0.24.0"
+	}
 }

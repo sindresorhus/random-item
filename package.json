@@ -10,13 +10,14 @@
     "url": "sindresorhus.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=8"
   },
   "scripts": {
-    "test": "ava"
+    "test": "xo && ava && tsd"
   },
   "files": [
-    "index.js"
+		"index.js",
+		"index.d.ts"
   ],
   "keywords": [
     "rand",
@@ -33,6 +34,8 @@
   ],
   "devDependencies": {
     "ava": "*",
-    "stable-fn": "^1.0.0"
+    "stable-fn": "^1.0.0",
+    "tsd": "^0.7.2",
+    "xo": "^0.24.0"
   }
 }

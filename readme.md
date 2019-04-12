@@ -1,6 +1,6 @@
 # random-item [![Build Status](https://travis-ci.org/sindresorhus/random-item.svg?branch=master)](https://travis-ci.org/sindresorhus/random-item)
 
-> Get a random item from an [Iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol)
+> Get a random item from an array
 
 
 ## Install
@@ -17,9 +17,6 @@ const randomItem = require('random-item');
 
 randomItem(['🐴', '🦄', '🌈']);
 //=> '🦄'
-
-randomItem(new Set(['🐴', '🦄', '🌈']);
-//=> '🌈'
 ```
 
 

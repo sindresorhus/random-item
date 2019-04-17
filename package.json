@@ -1,7 +1,7 @@
 {
 	"name": "random-item",
 	"version": "2.0.0",
-	"description": "Get a random item from an Iterable",
+	"description": "Get a random item from an array",
 	"license": "MIT",
 	"repository": "sindresorhus/random-item",
 	"author": {
@@ -24,7 +24,6 @@
 		"randomize",
 		"math",
 		"array",
-		"iterable",
 		"item",
 		"element",
 		"pick",

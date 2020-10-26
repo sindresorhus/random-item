@@ -13,7 +13,7 @@ declare const randomItem: {
 	<T>(input: readonly T[]): T;
 
 	/**
-	Get multiple random items from an array.
+	Get multiple random items from an array. This is the equivalent of calling `randomItem()` multiple times so the returned array may contain duplicates.
 
 	@example
 	```

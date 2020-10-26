@@ -17,11 +17,7 @@ module.exports.multiple = (array, count) => {
 		throw new TypeError('Expected a non-negative integer');
 	}
 
-	if (count > array.length) {
-		throw new TypeError(`Expected an array with at least ${count} items`);
-	}
-
 	array = [...array];
 
-	return [...new Array(count)].map(() => array.splice(Math.floor(Math.random() * array.length), 1)[0]);
+	return [...new Array(count)].map(() => array.splice(Math.floor(Math.random() * array.length), 1)[0]).slice(0, count);
 };

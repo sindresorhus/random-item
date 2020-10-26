@@ -9,10 +9,6 @@ module.exports = array => {
 };
 
 module.exports.multiple = (array, count) => {
-	if (!Array.isArray(array)) {
-		throw new TypeError('Expected an array');
-	}
-
 	if (!Number.isInteger(count) && count >= 0) {
 		throw new TypeError('Expected a non-negative integer');
 	}

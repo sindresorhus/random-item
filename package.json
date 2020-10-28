@@ -1,6 +1,6 @@
 {
 	"name": "random-item",
-	"version": "3.0.0",
+	"version": "3.1.0",
 	"description": "Get a random item from an array",
 	"license": "MIT",
 	"repository": "sindresorhus/random-item",

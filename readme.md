@@ -17,6 +17,9 @@ const randomItem = require('random-item');
 
 randomItem(['🐴', '🦄', '🌈']);
 //=> '🦄'
+
+randomItem.multiple(['🐴', '🦄', '🌈'], 2);
+//=> ['🌈', '🦄']
 ```
 
 

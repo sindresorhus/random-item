@@ -1,14 +1,12 @@
-# random-item [![Build Status](https://travis-ci.org/sindresorhus/random-item.svg?branch=master)](https://travis-ci.org/sindresorhus/random-item)
+# random-item [![Build Status](https://travis-ci.com/sindresorhus/random-item.svg?branch=master)](https://travis-ci.com/github/sindresorhus/random-item)
 
 > Get a random item from an array
-
 
 ## Install
 
 ```
 $ npm install random-item
 ```
-
 
 ## Usage
 
@@ -22,7 +20,6 @@ randomItem.multiple(['🐴', '🦄', '🌈'], 2);
 //=> ['🌈', '🦄']
 ```
 
-
 ## Related
 
 - [random-int](https://github.com/sindresorhus/random-int) - Generate a random integer
@@ -32,8 +29,3 @@ randomItem.multiple(['🐴', '🦄', '🌈'], 2);
 - [unique-random](https://github.com/sindresorhus/unique-random) - Generate random numbers that are consecutively unique
 - [unique-random-array](https://github.com/sindresorhus/unique-random-array) - Get consecutively unique elements from an array
 - [crypto-random-string](https://github.com/sindresorhus/crypto-random-string) - Generate a cryptographically strong random string
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

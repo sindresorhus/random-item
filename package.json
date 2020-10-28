@@ -4,10 +4,11 @@
 	"description": "Get a random item from an array",
 	"license": "MIT",
 	"repository": "sindresorhus/random-item",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"engines": {
 		"node": ">=8"

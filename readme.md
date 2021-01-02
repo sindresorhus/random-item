@@ -1,4 +1,4 @@
-# random-item [![Build Status](https://travis-ci.com/sindresorhus/random-item.svg?branch=master)](https://travis-ci.com/github/sindresorhus/random-item)
+# random-item
 
 > Get a random item from an array
 

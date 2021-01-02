@@ -11,3 +11,10 @@ test('main', t => {
 		t.is(typeof randomItem(fixture), 'string');
 	}
 });
+
+test('.multiple()', t => {
+	const result = randomItem.multiple(fixture, 4);
+
+	t.is(result.length, 4);
+	t.true(result.every(value => fixture.includes(value)));
+});

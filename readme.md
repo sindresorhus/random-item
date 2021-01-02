@@ -2,13 +2,11 @@
 
 > Get a random item from an array
 
-
 ## Install
 
 ```
 $ npm install random-item
 ```
-
 
 ## Usage
 
@@ -17,8 +15,10 @@ const randomItem = require('random-item');
 
 randomItem(['🐴', '🦄', '🌈']);
 //=> '🦄'
-```
 
+randomItem.multiple(['🐴', '🦄', '🌈'], 2);
+//=> ['🌈', '🦄']
+```
 
 ## Related
 
@@ -29,8 +29,3 @@ randomItem(['🐴', '🦄', '🌈']);
 - [unique-random](https://github.com/sindresorhus/unique-random) - Generate random numbers that are consecutively unique
 - [unique-random-array](https://github.com/sindresorhus/unique-random-array) - Get consecutively unique elements from an array
 - [crypto-random-string](https://github.com/sindresorhus/crypto-random-string) - Generate a cryptographically strong random string
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

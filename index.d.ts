@@ -4,7 +4,7 @@ declare const randomItem: {
 
 	@example
 	```
-	import randomItem = require('random-item');
+	import randomItem from 'random-item';
 
 	randomItem(['🐴', '🦄', '🌈']);
 	//=> '🦄'
@@ -19,13 +19,13 @@ declare const randomItem: {
 
 	@example
 	```
-	import randomItem = require('random-item');
+	import randomItem from 'random-item';
 
 	randomItem.multiple(['🐴', '🦄', '🌈'], 2);
 	//=> ['🌈', '🦄']
 	```
 	*/
 	multiple<T>(input: readonly T[], count: number): T[];
-}
+};
 
-export = randomItem;
+export default randomItem;

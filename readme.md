@@ -11,7 +11,7 @@ $ npm install random-item
 ## Usage
 
 ```js
-const randomItem = require('random-item');
+import randomItem from 'random-item';
 
 randomItem(['🐴', '🦄', '🌈']);
 //=> '🦄'

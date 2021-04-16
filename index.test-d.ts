@@ -1,5 +1,5 @@
 import {expectType} from 'tsd';
-import randomItem = require('.');
+import randomItem from './index.js';
 
 expectType<string>(randomItem(['🐴', '🦄', '🌈']));
 expectType<string | number>(randomItem(['🐴', '🦄', '🌈', 1]));

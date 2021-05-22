@@ -7,7 +7,7 @@ export default function randomItem(array) {
 }
 
 randomItem.multiple = (array, count) => {
-	if (!Number.isInteger(count) && count >= 0) {
+	if (!Number.isInteger(count) || (Number.isInteger(count) && count < 0)) {
 		throw new TypeError('Expected a non-negative integer');
 	}
 

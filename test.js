@@ -12,7 +12,7 @@ test('main', t => {
 	}
 });
 
-test('main arg validation', t => {
+test('main - argument validation', t => {
 	t.throws(() => {
 		randomItem('a');
 	}, {
@@ -27,7 +27,7 @@ test('.multiple()', t => {
 	t.true(result.every(value => fixture.includes(value)));
 });
 
-test('.multiple() arg validation', t => {
+test('.multiple() - argument validation', t => {
 	t.throws(() => {
 		randomItem.multiple(fixture, -1);
 		randomItem.multiple(fixture, 'a');

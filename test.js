@@ -12,8 +12,27 @@ test('main', t => {
 	}
 });
 
+test('main - argument validation', t => {
+	t.throws(() => {
+		randomItem('a');
+	}, {
+		instanceOf: TypeError,
+		message: 'Expected an array'
+	});
+});
+
 test('.multiple()', t => {
 	const result = randomItem.multiple(fixture, 4);
 	t.is(result.length, 4);
 	t.true(result.every(value => fixture.includes(value)));
+});
+
+test('.multiple() - argument validation', t => {
+	t.throws(() => {
+		randomItem.multiple(fixture, -1);
+		randomItem.multiple(fixture, 'a');
+	}, {
+		instanceOf: TypeError,
+		message: 'Expected a non-negative integer'
+	});
 });

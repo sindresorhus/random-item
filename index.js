@@ -11,5 +11,5 @@ randomItem.multiple = (array, count) => {
 		throw new TypeError('Expected a non-negative integer');
 	}
 
-	return Array.from({length: count}, () => randomItem(array))
+	return Array.from({length: count}, () => randomItem(array));
 };
